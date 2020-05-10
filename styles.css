@@ -123,13 +123,19 @@ button:hover{
   background: #fff;
   display: flex;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18);
+  margin-bottom: 1em;
   justify-content: space-between;
+}
+
+.infos-quarto{
+  width: 65%;
 }
 
 .card-quarto img{
   width: 300px;
   height: 200px;
   border-radius: 4px;
+  margin-right: 10px;
 }
 
 .card-quarto span{
@@ -144,20 +150,15 @@ button:hover{
 }
 
 .price{
-  width: 150px;
-  bottom: 0;
-  right: 0px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  right: 0px;
 }
 
 .price span{
   font-weight: bold;
   color: #000;
   font-size: 16px;
-  
 }
 
 /* Fim listagem quartos */
