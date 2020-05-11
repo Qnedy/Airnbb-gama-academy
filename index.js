@@ -49,23 +49,22 @@ function carregarPontos() {
 
 }
 
+let iconMarker = './img/sinais.svg';
+
 let time = setTimeout(function initMap() {
   // The location of Uluru
 
-  var uluru = {lat: -19.212355602107472, lng: -44.20234468749999};var teste = {lat: -22.618827234831404, lng: -42.57636812499999};
+  var uluru = {lat: -19.212355602107472, lng: -44.20234468749999};
   // The map, centered at Uluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  // var marker = new google.maps.Marker({position: uluru, map: map});
-
-  // var marker = new google.maps.Marker({position: teste, map: map});
 
   pointers.map(ponto => {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(ponto.lat, ponto.lng),
         title: "Meu ponto personalizado! :-D",
-        map: map
+        map: map,
+        icon: iconMarker
     });
   });
 
